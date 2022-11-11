@@ -1,0 +1,234 @@
+body,
+h1,
+h3 {
+  padding: 30;
+  margin: 30;
+}
+
+body {
+  color: #e8e2e2;
+  image-rendering: pixelated;
+  background: rgb(214, 211, 222);
+  font-family: "Inconsolata", monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "arial";
+  font-weight: 400;
+  letter-spacing: 10px;
+  color: #e90a0a;
+}
+
+span {
+  color: #e1dbdb;
+}
+
+h3 {
+  text-align:center;
+  font-family: "Inconsolata", monospace;
+  font-weight: 800;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  color: #c91919;
+  border: #19a3c9;
+}
+
+::selection {
+  background: #f4e630;
+  color: rgb(225, 59, 22);
+}
+
+#mensagem {
+  background: rgba(246, 244, 242, 0.3);
+  box-shadow: 0px 4px 13px rgba(1, 30, 6, 0.5);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 20px;
+  display: block;
+}
+
+textarea {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 20px;
+  color: #afafaf;
+  background-color: #19a3c9;
+}
+
+#mensagem:focus {
+  background: linear-gradient(145deg, #5a5a5a, #4c4c4c);
+  box-shadow: 10px 10px 70px #505050, -10px -10px 70px #585858;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.911);
+  font-family: "Inconsolata", monospace;
+  color: #afafaf;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+select option {
+  background: #aeaaaa;
+  color: #ffffff;
+  font-family: "Inconsolata", monospace;
+}
+
+select:focus {
+  background: linear-gradient(145deg, #5a5a5a, #4c4c4c);
+  box-shadow: 10px 10px 70px #505050, -10px -10px 70px #585858;
+}
+
+.radio {
+  display: flex;
+  gap: 5px;
+  color: #c91919;
+  place-items: center;
+}
+
+input[type="radio"] {
+  outline: none;
+  accent-color: #19c9a3;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="radio"]:focus {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 10px 10px 2s0px #d1d1d1, -10px -10px 40px #ffffff;
+}
+
+.radio-button {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: inline-block;
+  background-color: rgba(209, 20, 20, 0.3);
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #c91919;
+  margin-bottom: 20px;
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:focus {
+  outline: solid 1px #19c9a3;
+}
+
+button:hover {
+  background-color: rgb(228, 221, 221);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mensagem {
+  background: rgba(245, 243, 243, 0.3);
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.slider-range {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 30px;
+  background-color: rgba(138, 138, 138, 0.2);
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #818181;
+  color: #ffffff;
+  outline: none;
+  font-family: "Inconsolata", monospace;
+}
+
+.chave {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #f1eded;
+  font-size: 0.875rem;
+}
+
+.chave-container {
+  display: none;
+}
+
+.range {
+  -webkit-appearance: none;
+  height: 10px;
+  background-color: rgb(250, 245, 245);
+  outline: none;
+  cursor: ew-resize;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 10px;
+  background-color: #ecf3f1;
+  border-radius: 2px;
+}
+
+.social {
+  display: flex;
+  place-content: center;
+  gap: 20px;
+}
+
+svg:hover path {
+  fill: #19a3c9;
+}
+
+.imagem{
+  background-image: url("imagens/3643769-building-home-house-main-menu-start_113416.png");
+}
